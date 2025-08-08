@@ -1,0 +1,30 @@
+Basic Firewall Configuration and Testing Report (Task 4)
+--------------------------------------------------------
+
+Tool Used: Windows Defender Firewall with Advanced Security  
+Configuration Type: Inbound Rule Management  
+Configuration Date: August 8, 2025  
+Target: Local system (localhost)  
+Total Rules Configured: 2  
+Total Rules Removed: 1
+
+-----------------------------------------------------------
+TESTED FIREWALL RULE
+-----------------------------------------------------------
+
+1. Block Inbound Telnet Traffic (Port 23)  
+
+Action: Block the connection  
+Direction: Inbound  
+Protocol: TCP  
+Port: 23  
+Profile: Domain, Private, Public  
+Rule Name: Block Telnet Port 23
+
+Description:  
+Telnet is an outdated and insecure protocol often targeted by attackers. Blocking port 23 helps reduce system exposure to unauthorized access or brute-force attacks.
+
+-----------------------------------------------------------
+
+NOTE: An additional rule to allow SSH (Port 22) was added for demonstration but is typically not required on Windows unless OpenSSH Server is installed.
+
